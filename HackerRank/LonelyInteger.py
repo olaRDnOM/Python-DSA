@@ -18,17 +18,14 @@ def lonelyinteger(a):
     
     for i in a:
         if i not in dictionary.keys():
-            dictionary[i] = 0
-            for j in a:
-                if i == j:
-                    dictionary[i] += 1
+            dictionary[i] = 1
+        else:
+            dictionary[i] += 1
 
     for i in dictionary:
         if dictionary[i] == 1:
             return i
         
-        
-
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
