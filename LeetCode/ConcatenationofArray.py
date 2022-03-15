@@ -15,6 +15,6 @@ def solution(nums):
     ans = []
     for i in len(nums):
         ans.append(i)
-     for i in len(nums):
+    for i in len(nums):
         ans.append(i)
     return ans
